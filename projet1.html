@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <style>
+        body{
+            font-family: arial,sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 500px;
+            margin :50px auto ;
+            padding: 20px;
+            background-color: #706f6f;
+            border-radius: 10px;
+            box-shadow: 10px 15px 3px rgba(0, 0, 0, 0.1);
+            
+        }
+        h3{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        label{
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],input[type="email"],input[type="password"]{
+          width: 80%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          text-align: center;
+        }
+        .input-container{
+          margin-bottom: 15px;
+        }
+        .container button{
+            width: 30%;
+            padding: 10px;
+            background-color: #2739d4;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 auto; 
+            display: block; 
+            box-sizing: border-box;
+        }
+        button:hover {
+            background-color: #6b76df;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <img src="logo1.png.png" alt="logo_projet" style="border-radius: 70%;" width="100" height="100">
+        <div class="mb">
+            <a href="page-1 (1).html"><button >Accueil</button></a>
+          <a href="projet2.html">
+            <button>Connexion</button>
+          </a>
+          <a href="projet1.html">
+            <button>S'inscrire</button>
+          </a>
+          <a href="proj.html">
+            <button>About</button>
+          </a>
+        </div>
+      </div>
+    <div class="container">
+        <h3>FORMULAIRE D'INSCRIPTION EN LIGNE</h3>
+          <form>
+            <div class="input-container">
+                <label for="name">Prenom :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-container">
+                <label for="family_name">Nom :</label>
+                <input type="text" id="family_name" name="family_name" required>
+            </div>
+            <div class="input-container">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Inscrire</button>
+          </form>
+    </div>  
+    <div class="oo">
+        <p >&copy  JobConnect </p>
+    <p>Pour toute question ou assistance, n'hésitez pas à nous contacter :</p>
+      <p>Email :<a href="" type="E-mail"> rami.benamor@ensi_uma.tn</a></p>
+      <p>Téléphone:+216 57 911 341</p>
+    </div>
+</div>
+</body>
+</html>

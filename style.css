@@ -1,0 +1,33 @@
+body{
+  font-size: 15px;
+}
+.ent{
+  width: 700px;
+  height: 250px;
+  background-color: rgb(185, 185, 206);
+  text-align: center;
+  margin-left: 23%;
+  border-radius: 25px;
+  box-shadow: 4px 15px 16px rgb(0,0,0,0.1);
+}
+.eee{
+  height: 270px;
+}
+#imgg{
+  width: 90px;
+  height: 90px;
+  margin: 0px;
+  padding: 0px;
+}
+.ioi{
+  margin: 0px;
+  display: inline;
+}
+.ioii{
+  margin-top: 15px;
+  padding-top: 0.5px;
+  margin-bottom: 0px;
+}
+#ioi{
+  margin-top: 0px;
+}
