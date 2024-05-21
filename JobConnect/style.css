@@ -1,0 +1,136 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* Style pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.ent{
+  width: 700px;
+  height: 290px;
+  background-color: rgb(185, 185, 206);
+  text-align: center;
+  margin-left: 23%;
+  border-radius: 25px;
+  box-shadow: 4px 15px 16px rgb(0,0,0,0.1);
+}
+.eee{
+  height: 330px;
+}
+#imgg{
+  width: 90px;
+  height: 90px;
+  margin: 0px;
+  padding: 0px;
+}
+.ioi{
+  margin: 0px;
+  display: inline;
+}
+.ioii{
+  margin-top: 15px;
+  padding-top: 0.5px;
+  margin-bottom: 0px;
+}
+#ioi{
+  margin-top: 0px;
+}
+
+.footer-info {
+  text-align: center;
+  margin-top: 20px;
+  font-size: small;
+  color: #666;
+}
+.footer-info p {
+  margin: 5px 0;
+}
+.footer-info a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position it at the bottom of the header */
+  top: 70px;
+  right: 0;
+  padding: 20px 0 0 20px;
+  width: 120px;
+  height: 60vh;
+  background-color: #fff; /* Match header background */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Dropdown shadow */
+  padding: 10px;
+  border-radius: 5px;
+}
+.dropdown-menu li{
+padding: 10px;
+text-transform: uppercase;
+transform: all 0.2s;
+animation: fade 0.5s ease-in-out forwards;
+}
+
+.dropdown-menu li:hover{
+background-color: #c7c6c6;
+}
+
+.dropdown-menu a{
+color: #000000;
+}
+
+@keyframes fade{
+from{
+  opacity: 0;
+  transform: translateX(100px);
+}to{
+  opacity: 1;
+  transform: translateX(0);
+}
+}
+
+select {
+width: calc(100% - 20px);
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+background-color: #fff;
+cursor: pointer;
+}
+
+button {
+  background-color: #2739d4; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px; 
+}
+
+button:hover {
+  background-color: #929be6;
+}

@@ -1,0 +1,136 @@
+* {
+  text-decoration: none;
+  list-style: none;
+ 
+}
+
+/* Main layout adjustments */
+.container-main {
+  display: flex;
+  flex-direction: row; /* Maintains the side-by-side layout */
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 80px; /* Adds padding at the top to push it below the header */
+  box-sizing: border-box; /* Includes padding in the height calculation */
+}
+
+.profile-container {
+  flex-grow: 1;
+  margin: 0px 20px 20px 300px; /* Adjusts margin to provide space from the sidebar */
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+.sidebar {
+  width: 250px; /* Maintains sidebar width */
+  background-color: #00457c;
+  color: #ffffff;
+  padding: 20px;
+  height: calc(100vh - 60px); /* Adjust height to account for header */
+  position: fixed;
+  top: 60px; /* Starts below the header */
+}
+
+
+.footer-info {
+  clear: both; /* Ensures it doesn't overlap or get affected by floating elements */
+  width: 70%; /* Full width to align with the main content area */
+  text-align: center; /* Center aligns the text within the footer */
+  padding: 20px 0; /* Top and bottom padding */
+  margin-top: 40px; /* Increased space between profile container and footer */
+  background-color: #f4f4f4; /* Maintains the background styling */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  color: aqua;
+}
+
+
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 12px; /* Slightly larger padding for a better touch area */
+  color: #ffffff; /* Ensuring text is white */
+  text-decoration: none;
+  border-bottom: 1px solid #013567; /* Subtle separation between items */
+}
+
+.sidebar ul li a:hover {
+  background-color: #013567; /* Slightly lighter blue on hover */
+}
+
+
+
+
+/* Rest of your existing CSS */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+
+
+.dropdown-menu {
+  display: none;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  padding: 10px;
+  width: 120px;
+  height: 60vh;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  text-transform: uppercase;
+  animation: fade 0.5s ease-in-out forwards;
+}
+
+.dropdown-menu li:hover {
+  background-color: #c7c6c6;
+}
+
+.dropdown-menu a {
+  color: #000000;
+}
+
+@keyframes fade {
+  from {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: pointer;
+}
